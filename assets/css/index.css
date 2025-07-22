@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tiktok Sans";
+}
+a {
+  text-decoration: none;
+}
+.isi_website{
+  padding: 0 20vh 0 10vh;
+}
+/* navigasi */
+.kepala_website {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px groove black;
+  background-color: white;
+  height: 100px;
+}
+.navigasi_website ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.navigasi_website li {
+  display: inline-block;
+  list-style: none;
+
+}
+.navigasi_website li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Tiktok Sans";
+  font-weight: 600;
+  font-size: 20px;
+}
+.navigasi_website li a:hover {
+  color: aqua ;
+}
+.koneksi_website {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  z-index: 10;
+}
+
+.logo_website h2{
+  margin-top : 30px;
+  font-family: "Roboto Slab";
+  color: black;
+} 
+.badan_website {
+  text-decoration: none;
+}
+.badan_website p {
+  font-family: "Tiktok Sans";
+  margin-top: 20px;
+}
+.deskripsi {
+  display: flex;
+  justify-content: space-between;
+}
+.deskripsi svg{
+  max-width: 300px;
+  width: 40vw;
+  margin-top: 100px;
+  pointer-events: none;
+  margin-right: 30px;
+  z-index: -1;
+}
+.deskripsi .deskripsi_1 {
+  margin-top: 180px; 
+  max-width: 40vw;
+}
+
+/* .deskripsi p {
+  max-width: 40vw;
+  margin-top: 30px;
+} */
+@media only screen and (max-width: 900px) {
+   
+}
