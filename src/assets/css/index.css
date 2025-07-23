@@ -37,6 +37,7 @@ a {
   font-family: "Tiktok Sans";
   font-weight: 600;
   font-size: 20px;
+  overflow-x: auto;
 }
 .navigasi_website li a:hover {
   color: aqua ;
