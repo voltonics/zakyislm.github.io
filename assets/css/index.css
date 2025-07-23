@@ -9,7 +9,12 @@ a {
   text-decoration: none;
 }
 .isi_website{
-  padding: 0 20vh 0 10vh;
+  padding: 0 10vh 0 5vh;
+  height: 100vh;
+}
+.header {
+  position: fixed;
+  top: 0;
 }
 /* navigasi */
 .kepala_website {
@@ -39,15 +44,15 @@ a {
   font-size: 20px;
 }
 .navigasi_website li a:hover {
-  color: aqua ;
+  color: #cccccc ;
 }
 .koneksi_website {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid black;
+  float: right;
+  padding: 0;
   z-index: 10;
+}
+.koneksi_website li a {
+  color: black;
 }
 
 .logo_website h2{
@@ -55,8 +60,11 @@ a {
   font-family: "Roboto Slab";
   color: black;
 } 
+.logo_website h2:hover {
+  color: #ccc;
+}
 .badan_website {
-  text-decoration: none;
+  position: relative;
 }
 .badan_website p {
   font-family: "Tiktok Sans";
@@ -72,17 +80,214 @@ a {
   margin-top: 100px;
   pointer-events: none;
   margin-right: 30px;
+  display: block;
   z-index: -1;
 }
 .deskripsi .deskripsi_1 {
   margin-top: 180px; 
   max-width: 40vw;
 }
-
+.tentang_saya {
+  margin-top: 160px;
+  padding-top:  50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-top: 1px solid black
+}
+.tentang_saya svg {
+  max-width: 300px;
+  width: 30vw;
+  margin-top: 50px;
+  pointer-events: none;
+  display: block;
+  margin: auto;
+}
+.tentang_isi {
+  max-width: 50vw;
+  float: right;
+  margin-top: 50px;
+}
+.about_saya {
+  margin-top: 20px;
+}
 /* .deskripsi p {
   max-width: 40vw;
   margin-top: 30px;
 } */
-@media only screen and (max-width: 900px) {
-   
+.rounded-social-buttons a{
+  color: black;
+  font-size: 30px;
+}
+.rounded-social-buttons a i:hover {
+  color: #ccc;
+}
+.sosial_website {
+  padding-bottom: 40px;
+}
+/* projek */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  margin-top: 120px;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  padding-top: 100px;
+  border-top: 1px solid black;
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* footer */
+.parent {
+  font-family: "Tiktok Sans";
+}
+.footer_website {
+  margin-top: 130px;
+  border-top: 1px solid black;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .isi_website {
+    padding: 0 1.5rem 0 1.5rem;
+
+  }
+  .kepala_website {
+    display: block;
+    align-items: center;
+    text-align: center;
+
+  }
+  .navigasi_website {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .deskripsi {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .deskripsi svg {
+    width: 200px;
+    max-width: auto;
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
+  .deskripsi .deskripsi_1 {
+    width: 80vw;
+    max-width: 500px;
+    margin-top: 50px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+  }
+  .tentang_saya {
+    margin-top: 10px;
+    display: block;
+  }
+  .tentang_saya svg {
+    margin-top: 30px;
+    width: 250px;
+    max-width: auto;
+  }
+  .tentang_isi {
+    float: none;
+    align-items: center;
+    display: block;
+    max-width: 90vw;
+  }
+  /* .about_saya{
+
+  } */
+
+  /* projek */
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
