@@ -22,7 +22,7 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   margin-top: 35px;
 }
 .navigasi_website li {
